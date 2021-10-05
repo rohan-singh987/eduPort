@@ -1,0 +1,201 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.entry{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("https://leverageedu.com/blog/wp-content/uploads/2020/05/Online-Learning-Platforms.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.logo{
+    width: 90px;
+    cursor: pointer;
+    /* height: 200px; */
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    /* margin: 0 10px; */
+    position: sticky;
+    background-color: black;
+    padding: 0 36px;
+}
+
+.btn{
+   
+    height: 100vh;
+
+    top: 10px;
+    right: 10px;
+
+    width: 130px;
+    height: 45px;
+    background: none;
+    color: rgb(44, 44, 44);
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.05rem;
+    border-radius: 50px ;
+    background:#ffffff ;
+    /* box-shadow: 20px 20px 60px #d9d9d9,
+                -20px -20px 60px #ffffff; */
+    position: relative;
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    width: 110%;
+    height: 120%;
+    border-radius: 50px;
+    z-index: -1;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2 );
+    transform: scale(0.8);
+    transition: transform .4s;
+    
+
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2 );
+    z-index: -2;
+    filter: blur(10px);
+    transform: scale(0.5);
+    transition: transform .4s;
+}
+
+.btn:hover{
+    color: coral;
+    
+}
+
+.btn:hover::before, .btn::after {
+    transform: scale(1.1);
+}
+
+.sign-up{
+    width: 400px;
+    cursor: pointer;
+  font-weight: bold;
+  color: #f9f9f9;
+  background-color: #0063e5;
+  margin-bottom: 12px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  letter-spacing: 1.5px;
+  transition: all 100ms;
+
+  font-size: 25px;
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.sign-up:hover {
+    background-color: #0483ee;
+    transform: scale(1.2);
+
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.description{
+    color: whitesmoke;
+}
+
+
+
+
+
+
+
+/* [[[[[[[[[[[[[[[[[[[      Home      ]]]]]]]]]]]]]]]]]]] */
+nav{
+    height: 70px;
+    background: #090b13;
+    display: flex;
+    align-items:center;
+    padding: 0 36px;
+    justify-content: space-between;
+    position: sticky;
+    overflow-x: hidden;
+}
+
+.Logo{
+    width: 80px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    cursor: pointer;
+    background: #090b13;
+    border: rgb(249,249,249);
+    color: rgb(249, 249,249);
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 13px ;
+    
+}
+.nav-links ul li a .navOptions{
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+.nav-links ul li a img{
+    width: 25px;
+}
+
+.nav-links ul li ::after{
+    content:"";
+    height: 4px;
+    background: whitesmoke;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -5px;
+
+    transform-origin: center ;
+    transition:all 500ms cubic-bezier(0.25, 0.10, 0.20, 0.94) 0s;
+    opacity: 0;
+    transform: scaleX(0)
+    
+}
+.nav-links ul li:hover ::after{
+    transform: scale(1);
+    opacity: 1;
+}
