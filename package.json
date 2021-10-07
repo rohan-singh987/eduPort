@@ -1,0 +1,28 @@
+{
+  "name": "edu-port",
+  "version": "1.0.0",
+  "description": "A project in which you can compare all the online courses and sort them with refrence to price or popularity",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devStart" : "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rohan-singh987/eduPort.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rohan-singh987/eduPort/issues"
+  },
+  "homepage": "https://github.com/rohan-singh987/eduPort#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.13"
+  }
+}
