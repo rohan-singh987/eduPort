@@ -241,7 +241,16 @@ nav{
   border-radius: 0px;
   border-width: thin;
 }
-footer{
+
+/* [[[[[[[[[[[[[[       footer     ]]]]]]]]]]]]]] */
+
+.footer{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#footer{
   background-color: #090b13;
   color: white;
   padding-top: 10px;
@@ -249,15 +258,27 @@ footer{
   width: 100%;
   position: absolute;
   bottom: 0;
+  align-items: center;
 }
 small{
-  display: inline-block;
-margin-left: 70px;
-margin-top: 15px;
+    display: inline-block;
+    margin-left: 70px;
+    margin-top: 15px;
+    cursor: pointer;
 }
 
 form{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
+
+.footer-icon{
+    display: flex;
+    align-items: center;
+    bottom: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+
