@@ -210,6 +210,59 @@ nav{
   border-radius: 5px;
   text-align: justify;
 }
+
+nav .gg-close {
+    display: none;
+}
+
+nav .gg-menu {
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    
+    .nav-links ul li{
+            display: block;
+    }
+
+    .nav-links{
+        position: fixed  ;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    
+    nav .gg-close{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer ;
+    }
+    
+    nav .gg-menu{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer ;
+    }
+
+
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
 .submit-search{
   height: 30px;
   width: 30px;
