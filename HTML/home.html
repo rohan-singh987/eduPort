@@ -8,14 +8,17 @@
     <link rel="icon" href="/images/2.0.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/ce18076c22.js" crossorigin="anonymous"></script>
+    <link href='https://css.gg/menu.css' rel='stylesheet'>
+    <link href='https://css.gg/close.css' rel='stylesheet'>
     <title>Home</title>
 </head>
 <body>
     <nav>
         <img src="/images/2.0.png" class="Logo" alt="">
         <div class="nav-links">
-
-
+        
+        <div class="nav-links" id="navLinks">
+        <i class="gg-close" onclick="hideMenu()"></i> 
             <ul>
                 <li>
                     <a href="#">
@@ -42,6 +45,9 @@
                 </li>
 
             </ul>
+        </div>
+        <i class="gg-menu" onclick="showMenu()"></i>    
+
                 <div class="search-bar">
                     <a class="search"href="#">
                       <form class="" action="index.html" method="post">
@@ -67,5 +73,7 @@
 </footer>
 
 
+
+<script src="/Script.js"></script>
 </body>
 </html>
